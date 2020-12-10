@@ -1,0 +1,232 @@
+name: info2051_2018
+description: A new Flutter project.
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# Read more about versioning at semver.org.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^4.3.2+2
+  path_provider: ^1.6.24
+  audioplayers: ^0.17.0
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_launcher_icons: "^0.8.0"
+  flutter_test:
+    sdk: flutter
+
+flutter_icons:
+   image_path_android: "assets/LauncherIcons/icon.png"
+   image_path_ios: "assets/LauncherIcons/icon.png"
+   android: true # can specify file name here e.g. "ic_launcher"
+   ios: true # can specify file name here e.g. "My-Launcher-Icon"
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://www.dartlang.org/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+     - assets/LauncherIcons/
+     - assets/LoadingScreen/
+     - assets/SelectScreen/
+     - assets/HomeScreen/
+     - assets/CombatScreen/
+     - assets/CombatScreen/background/
+     - assets/CombatScreen/Warrior/
+     - assets/CombatScreen/Rogue/
+     - assets/CombatScreen/Mage/
+     - assets/CombatScreen/Monsters/Goblin/
+     - assets/CombatScreen/Monsters/Goblin/Attack/
+     - assets/CombatScreen/Monsters/Goblin/Death/
+     - assets/CombatScreen/Monsters/Goblin/Hurt/
+     - assets/CombatScreen/Monsters/Vampire/
+     - assets/CombatScreen/Monsters/Vampire/Attack/
+     - assets/CombatScreen/Monsters/Vampire/Death/
+     - assets/CombatScreen/Monsters/Vampire/Hurt/
+     - assets/CombatScreen/Monsters/DarkKnight/
+     - assets/CombatScreen/Monsters/DarkKnight/Attack/
+     - assets/CombatScreen/Monsters/DarkKnight/Death/
+     - assets/CombatScreen/Monsters/DarkKnight/Hurt/
+     - assets/CombatScreen/Monsters/BigKnight/
+     - assets/CombatScreen/Monsters/BigKnight/Attack/
+     - assets/CombatScreen/Monsters/BigKnight/Death/
+     - assets/CombatScreen/Monsters/BigKnight/Hurt/
+     - assets/CombatScreen/Monsters/Skeleton/Attack/
+     - assets/CombatScreen/Monsters/Skeleton/
+     - assets/CombatScreen/Monsters/Skeleton/Death/
+     - assets/CombatScreen/Monsters/Skeleton/Hurt/
+     - assets/CombatScreen/Monsters/Boss1/Attack/
+     - assets/CombatScreen/Monsters/Boss1/
+     - assets/CombatScreen/Monsters/Boss1/Death/
+     - assets/CombatScreen/Monsters/Boss1/Hurt/
+     - assets/CombatScreen/Monsters/Boss2/Attack/
+     - assets/CombatScreen/Monsters/Boss2/
+     - assets/CombatScreen/Monsters/Boss2/Death/
+     - assets/CombatScreen/Monsters/Boss2/Hurt/
+     - assets/CombatScreen/Monsters/Boss2/Spells/
+     - assets/CombatScreen/Monsters/Boss2/Spells/spell1/
+     - assets/CombatScreen/Monsters/Boss2/Spells/spell2/
+     - assets/CombatScreen/Monsters/Boss2/Spells/spell3/
+     - assets/CombatScreen/Monsters/Boss2/Spells/spell4/
+     - assets/CombatScreen/Effects/
+     - assets/CombatScreen/Frames/Main/Bars/
+     - assets/CombatScreen/OnLose/
+     - assets/CombatScreen/OnWin/
+     - assets/CraftScreen/
+     - assets/CraftScreen/Magician/
+     - assets/CraftScreen/Magician/Hurry/
+     - assets/CraftScreen/Magician/Idiot/
+     - assets/MerchantScreen/
+     - assets/MerchantScreen/Seller/
+     - assets/MerchantScreen/Seller/Weapons/
+     - assets/MerchantScreen/Seller/Weapons/Hey/
+     - assets/MerchantScreen/Seller/Weapons/Happy/
+     - assets/MerchantScreen/Seller/Weapons/Sad/
+     - assets/MerchantScreen/Seller/Armor/
+     - assets/MerchantScreen/Seller/Armor/Hey/
+     - assets/MerchantScreen/Seller/Armor/Happy/
+     - assets/MerchantScreen/Seller/Armor/Sad/
+     - assets/MerchantScreen/Seller/Potions/
+     - assets/MerchantScreen/Seller/Potions/Hey/
+     - assets/MerchantScreen/Seller/Potions/Happy/
+     - assets/MerchantScreen/Seller/Potions/Sad/
+     - assets/Common/Items/
+     - assets/Common/Items/Weapons/
+     - assets/Common/Items/Weapons/Mage/1/
+     - assets/Common/Items/Weapons/Mage/2/
+     - assets/Common/Items/Weapons/Mage/3/
+     - assets/Common/Items/Weapons/Mage/4/
+     - assets/Common/Items/Weapons/Mage/5/
+     - assets/Common/Items/Weapons/Rogue/1/
+     - assets/Common/Items/Weapons/Rogue/2/
+     - assets/Common/Items/Weapons/Rogue/3/
+     - assets/Common/Items/Weapons/Rogue/4/
+     - assets/Common/Items/Weapons/Rogue/5/
+     - assets/Common/Items/Weapons/Warrior/1/
+     - assets/Common/Items/Weapons/Warrior/2/
+     - assets/Common/Items/Weapons/Warrior/3/
+     - assets/Common/Items/Weapons/Warrior/4/
+     - assets/Common/Items/Weapons/Warrior/5/
+     - assets/Common/Items/Armor/
+     - assets/Common/Items/Armor/Warrior/Boots/
+     - assets/Common/Items/Armor/Warrior/Chest/
+     - assets/Common/Items/Armor/Warrior/Gloves/
+     - assets/Common/Items/Armor/Warrior/Head/
+     - assets/Common/Items/Armor/Warrior/Pants/
+     - assets/Common/Items/Armor/Rogue/Boots/
+     - assets/Common/Items/Armor/Rogue/Chest/
+     - assets/Common/Items/Armor/Rogue/Gloves/
+     - assets/Common/Items/Armor/Rogue/Head/
+     - assets/Common/Items/Armor/Rogue/Pants/
+     - assets/Common/Items/Armor/Mage/Boots/
+     - assets/Common/Items/Armor/Mage/Chest/
+     - assets/Common/Items/Armor/Mage/Gloves/
+     - assets/Common/Items/Armor/Mage/Head/
+     - assets/Common/Items/Armor/Mage/Pants/
+     - assets/Common/Items/Potions/
+     - assets/Common/Heroes/Warrior/Attack/
+     - assets/Common/Heroes/Warrior/Attack_Extra/
+     - assets/Common/Heroes/Warrior/Death/
+     - assets/Common/Heroes/Warrior/Hurt/
+     - assets/Common/Heroes/Warrior/
+     - assets/Common/Heroes/Warrior/Idle/
+     - assets/Common/Heroes/Barbarian/Attack/
+     - assets/Common/Heroes/Barbarian/Attack_Extra/
+     - assets/Common/Heroes/Barbarian/Death/
+     - assets/Common/Heroes/Barbarian/Hurt/
+     - assets/Common/Heroes/Barbarian/Idle/
+     - assets/Common/Heroes/Barbarian/
+     - assets/Common/Heroes/Paladin/Attack/
+     - assets/Common/Heroes/Paladin/Attack_Extra/
+     - assets/Common/Heroes/Paladin/Death/
+     - assets/Common/Heroes/Paladin/Hurt/
+     - assets/Common/Heroes/Paladin/
+     - assets/Common/Heroes/Paladin/Idle/
+     - assets/Common/Heroes/Assassin/Attack/
+     - assets/Common/Heroes/Assassin/Attack_Extra/
+     - assets/Common/Heroes/Assassin/Death/
+     - assets/Common/Heroes/Assassin/Hurt/
+     - assets/Common/Heroes/Assassin/Idle/
+     - assets/Common/Heroes/Assassin/
+     - assets/Common/Heroes/Rogue/Attack/
+     - assets/Common/Heroes/Rogue/Attack_Extra/
+     - assets/Common/Heroes/Rogue/Death/
+     - assets/Common/Heroes/Rogue/Hurt/
+     - assets/Common/Heroes/Rogue/Idle/
+     - assets/Common/Heroes/Rogue/
+     - assets/Common/Heroes/Terrorist/Attack/
+     - assets/Common/Heroes/Terrorist/Attack_Extra/
+     - assets/Common/Heroes/Terrorist/Death/
+     - assets/Common/Heroes/Terrorist/Hurt/
+     - assets/Common/Heroes/Terrorist/Idle/
+     - assets/Common/Heroes/Terrorist/
+     - assets/Common/Heroes/Mage/Attack/
+     - assets/Common/Heroes/Mage/Attack_Extra/
+     - assets/Common/Heroes/Mage/Death/
+     - assets/Common/Heroes/Mage/Hurt/
+     - assets/Common/Heroes/Mage/Idle/
+     - assets/Common/Heroes/Mage/
+     - assets/Common/Heroes/Warlock/Attack/
+     - assets/Common/Heroes/Warlock/Death/
+     - assets/Common/Heroes/Warlock/Hurt/
+     - assets/Common/Heroes/Warlock/Idle/
+     - assets/Common/Heroes/Warlock/
+     - assets/Common/Heroes/Warlock/Attack_Extra/
+     - assets/Common/Heroes/Priest/Attack/
+     - assets/Common/Heroes/Priest/Death/
+     - assets/Common/Heroes/Priest/Hurt/
+     - assets/Common/Heroes/Priest/Idle/
+     - assets/Common/Heroes/Priest/
+     - assets/Common/Heroes/Priest/Attack_Extra/
+     - assets/HeroScreen/Inventory/Slots/
+     - assets/HeroScreen/Inventory/
+     - assets/HeroScreen/
+     - assets/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.io/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.io/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.io/custom-fonts/#from-packages
